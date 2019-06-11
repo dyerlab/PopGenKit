@@ -86,8 +86,8 @@
 		2A27F66822B028A400EEF569 /* Individual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Individual.swift; sourceTree = "<group>"; };
 		2A27F66922B028A400EEF569 /* Frequencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frequencies.swift; sourceTree = "<group>"; };
 		2A27F66A22B028A400EEF569 /* Locus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locus.swift; sourceTree = "<group>"; };
-		2A27F67922B028B900EEF569 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../Library/Mobile Documents/com~apple~CloudDocs/Programming/PopGenKit/README.md"; sourceTree = "<group>"; };
-		2A27F67A22B028BA00EEF569 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2A27F67922B028B900EEF569 /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; fileEncoding = 4; name = README.md; path = "../../Library/Mobile Documents/com~apple~CloudDocs/Programming/PopGenKit/README.md"; sourceTree = "<group>"; };
+		2A27F67B22B029FD00EEF569 /* en */ = {isa = PBXFileReference; name = en; path = en.lproj/LICENSE; sourceTree = "<group>"; };
 		OBJ_12 /* PopgenKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopgenKitTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -148,17 +148,16 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
-				2A27F67A22B028BA00EEF569 /* LICENSE */,
+				2A27F67C22B029FD00EEF569 /* LICENSE */,
 				2A27F67922B028B900EEF569 /* README.md */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_10 /* Tests */,
 				OBJ_14 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -253,7 +252,7 @@
 				English,
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -332,6 +331,17 @@
 			targetProxy = 2A27F64F22B0281800EEF569 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A27F67C22B029FD00EEF569 /* LICENSE */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A27F67B22B029FD00EEF569 /* en */,
+			);
+			name = LICENSE;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		OBJ_19 /* Debug */ = {
