@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 /**
  Default class for a data set of individuals.  This class maintains
  a dictionary of frequency objects created when adding individuals

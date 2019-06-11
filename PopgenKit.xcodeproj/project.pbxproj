@@ -87,12 +87,13 @@
 		2A27F66922B028A400EEF569 /* Frequencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frequencies.swift; sourceTree = "<group>"; };
 		2A27F66A22B028A400EEF569 /* Locus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locus.swift; sourceTree = "<group>"; };
 		2A27F67922B028B900EEF569 /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; fileEncoding = 4; name = README.md; path = "../../Library/Mobile Documents/com~apple~CloudDocs/Programming/PopGenKit/README.md"; sourceTree = "<group>"; };
-		2A27F67B22B029FD00EEF569 /* en */ = {isa = PBXFileReference; name = en; path = en.lproj/LICENSE; sourceTree = "<group>"; };
+		2A27F67B22B029FD00EEF569 /* en */ = {isa = PBXFileReference; lastKnownFileType = text; name = en; path = en.lproj/LICENSE; sourceTree = "<group>"; };
+		2A27F67D22B02A7000EEF569 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
 		OBJ_12 /* PopgenKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopgenKitTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* PopgenKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopgenKit.swift; sourceTree = "<group>"; };
-		"PopgenKit::PopgenKit::Product" /* PopgenKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PopgenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"PopgenKit::PopgenKit::Product" /* PopgenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PopgenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PopgenKit::PopgenKitTests::Product" /* PopgenKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PopgenKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -163,6 +164,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2A27F67D22B02A7000EEF569 /* Info.plist */,
 				OBJ_8 /* PopgenKit */,
 			);
 			name = Sources;
@@ -347,6 +349,7 @@
 		OBJ_19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -375,6 +378,7 @@
 		OBJ_20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -403,8 +407,11 @@
 		OBJ_26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				PRODUCT_BUNDLE_IDENTIFIER = PopgenKit;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -412,8 +419,11 @@
 		OBJ_27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				PRODUCT_BUNDLE_IDENTIFIER = PopgenKit;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
