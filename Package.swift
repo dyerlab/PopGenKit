@@ -16,3 +16,4 @@ let package = Package(
         .testTarget(name: "PopgenKitTests", dependencies: []),
     ]
 )
+
