@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A27F64E22B019A900EEF569 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A27F64D22B019A900EEF569 /* Package.swift */; };
 		2A676AFA22985D81001A3591 /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A676AF922985D81001A3591 /* FileIO.swift */; };
 		2AAE2F9D2298571E000BC6EB /* PopgenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAE2F932298571E000BC6EB /* PopgenKit.framework */; };
 		2AAE2FA42298571E000BC6EB /* PopgenKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AAE2F962298571E000BC6EB /* PopgenKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A27F64D22B019A900EEF569 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		2A676AF922985D81001A3591 /* FileIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIO.swift; sourceTree = "<group>"; };
 		2AAE2F932298571E000BC6EB /* PopgenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopgenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AAE2F962298571E000BC6EB /* PopgenKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopgenKit.h; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		2AAE2F892298571E000BC6EB = {
 			isa = PBXGroup;
 			children = (
+				2A27F64D22B019A900EEF569 /* Package.swift */,
 				2AAE2F952298571E000BC6EB /* PopgenKit */,
 				2AAE2FA02298571E000BC6EB /* PopgenKitTests */,
 				2AAE2F942298571E000BC6EB /* Products */,
@@ -264,6 +267,7 @@
 				2AAE300122985831000BC6EB /* DataSet.swift in Sources */,
 				2A676AFA22985D81001A3591 /* FileIO.swift in Sources */,
 				2AAE300522985831000BC6EB /* Frequencies.swift in Sources */,
+				2A27F64E22B019A900EEF569 /* Package.swift in Sources */,
 				2AAE2FFF22985831000BC6EB /* Genotype.swift in Sources */,
 				2AAE2FFD22985831000BC6EB /* Coordinate.swift in Sources */,
 			);
