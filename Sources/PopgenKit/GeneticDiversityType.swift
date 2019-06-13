@@ -2,7 +2,8 @@
 //  DiversityType.swift
 //  PopgenKit
 //
-//  Created by Rodney Dyer on 6/13/19.
+//  Created by Rodney Dyer.
+//  Copyright © 2019 Rodney Dyer. All rights reserved.
 //
 
 import Foundation
