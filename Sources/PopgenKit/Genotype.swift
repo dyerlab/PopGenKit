@@ -118,3 +118,6 @@ extension Genotype: Equatable {
 
 // MARK: Codable
 extension Genotype: Codable {}
+
+
+

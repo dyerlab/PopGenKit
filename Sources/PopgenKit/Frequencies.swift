@@ -124,6 +124,46 @@ public final class Frequencies {
         }
         return ret
     }
+    
+    
+    
+    /// Get the Allelic Richness
+    ///
+    /// This function takes one of the `GeneticDiversityType` enums and returns
+    ///  the result for this allele frequency object.  Possible modes include:
+    ///   - A: The number of alleles
+    ///   - A95: The number of alleles with frequency > 0.05
+    ///   - Ae: A frequency weighed allelic richness
+    ///   - Ho: Observed heterozygosity
+    ///   - He: Exepcted heterozygosity (assuming HWE).
+    ///
+    ///   - Parameter mode: One of the `GeneticDiversityType` values.
+    ///
+    /// - Returns: The diversity estimate requested.
+    func diversity( mode: GeneticDiversityType ) -> Double {
+        
+        switch mode {
+            
+        case .A:
+            return Double( self.counts.keys.count )
+            
+        case .A95:
+            let freqs = self.frequency(alleles: self.alleles )
+            return Double( freqs.filter{ $0 >= 0.05}.count )
+            
+        case .Ae:
+            let freqs = self.frequency(alleles: self.alleles )
+            return 1.0 / (freqs.map {$0 * $0}.reduce(0, +))
+            
+        case .Ho:
+            return self.observedHeterozygosity
+            
+        case .He:
+            return self.expectedHeterozygosity
+            
+        }
+        
+    }
 
 }
 

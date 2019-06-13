@@ -12,13 +12,12 @@ import MapKit
 /// Error for Coordinate enum
 public enum CoordinateError: Error {
 
-    /// Coordiante out of bounds
+    /// Coordiante numerical values exceed those for longitude and latitude
     case coordinateOutOfBounds
 }
 
 /**
  Struct for a general coordinate that can be Codable and Equatable
- 
  */
 public struct Coordinate: Codable, Hashable, Equatable {
 
@@ -30,8 +29,6 @@ public struct Coordinate: Codable, Hashable, Equatable {
 
     /**
     Quick check on valididy of range for latitude & longitude.
- 
-    - Returns: Flag based upon lat/lon in proper range.
      */
     var isValid: Bool {
         return abs(longitude) <= 180.0 && abs(latitude) <= 90.0

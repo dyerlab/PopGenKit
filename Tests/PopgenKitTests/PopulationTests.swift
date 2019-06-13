@@ -1,5 +1,5 @@
 //
-//  DataSetTests.swift
+//  PopulationTests.swift
 //  geneticTests
 //
 //  Created by Rodney Dyer on 5/23/19.
@@ -8,10 +8,10 @@
 
 import XCTest
 
-class DataSetTests: XCTestCase {
+class PopulationTests: XCTestCase {
 
     func testInit() {
-        let data = DataSet()
+        let data = Population()
 
         XCTAssertEqual(data.count, 0)
 

@@ -46,8 +46,13 @@ Allele Frequencies:
 A: 0.75
 B: 0.25
 """
-        print(strObs)
         XCTAssertEqual(strObs, strExp)
+        
+        XCTAssertEqual(freq.diversity(mode: .A ), freq.diversity(mode: .A95) )
+        XCTAssertEqual(freq.diversity(mode: .Ae), 1.6)
+        XCTAssertEqual(freq.diversity(mode: .Ho), 0.5)
+        XCTAssertEqual(freq.diversity(mode: .He), 0.375 )
+        
     }
 
     func testRemoveGenotypes() {

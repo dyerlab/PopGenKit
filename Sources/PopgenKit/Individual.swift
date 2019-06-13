@@ -53,3 +53,28 @@ extension Individual: Equatable {
             lhs.location == rhs.location
     }
 }
+
+
+/// Custom String Convertible
+extension Individual: CustomStringConvertible {
+    
+    public var description: String {
+        var ret = [String]()
+        let keys = self.strata.keys.sorted()
+        for key in keys {
+            ret.append( "\(strata[key] ?? "" )" )
+        }
+        if let coord = self.location {
+            ret.append( "\(coord.latitude)")
+            ret.append( "\(coord.longitude)")
+        }
+        let locusNames = self.locus.keys.sorted()
+        for loc in locusNames {
+            ret.append( "\(self.locus[loc]!)")
+        }
+        
+        
+        return ret.joined(separator: " ")
+    }
+    
+}
