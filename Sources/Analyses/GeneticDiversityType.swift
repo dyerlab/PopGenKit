@@ -10,7 +10,7 @@ import Foundation
 
 
 /// Enumeration across different kinds of genetic diversity to be estimated.
-enum GeneticDiversityType: String {
+enum GeneticDiversityType: String, CaseIterable {
     
     /// The raw number of alleles at a locus
     case A
@@ -22,4 +22,7 @@ enum GeneticDiversityType: String {
     case Ho
     /// Expected heterozygosity
     case He
+    
+    /// Allow inspection of the number of elements
+    static var count: Int { return GeneticDiversityType.AllCases().count }
 }

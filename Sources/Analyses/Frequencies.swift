@@ -15,6 +15,11 @@ import Foundation
  functions to maintain internal consistencey.
  */
 public final class Frequencies {
+    
+    /// How many alleles observed in this frequency object
+    var count: Int {
+        return self.counts.keys.count
+    }
 
     /// Dictionary for maintaing allele counts
     private var counts = [String: Double]()

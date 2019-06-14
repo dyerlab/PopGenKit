@@ -115,10 +115,16 @@ public final class Population {
      */
     func partition( stratum: String ) -> [String: Population] {
         var ret = [String: Population]()
-        let pops = Set( individuals.map {$0.strata[stratum] }.compactMap { $0 })
-
-        for pop in pops {
-            ret[pop] = self.subset(key: stratum, value: pop )
+        
+        if !strata.contains(stratum) || stratum.isEmpty {
+            ret["All"] = self
+        }
+        else {
+            let pops = Set( individuals.map {$0.strata[stratum] }.compactMap { $0 })
+            
+            for pop in pops {
+                ret[pop] = self.subset(key: stratum, value: pop )
+            }
         }
 
         return ret
