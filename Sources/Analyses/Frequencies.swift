@@ -195,10 +195,12 @@ extension Frequencies: MatrixAdaptable {
         let nrow = alleles.count
         var ret = Matrix(rows: nrow, cols: 1)
         ret.rowNames = alleles
+        
         for (i,allele) in alleles.enumerated() {
-            Matrix[i,0] = frequency(allele: allele)
+            ret[i,0] = frequency(allele: allele)
         }
-        return Matrix
+        
+        return ret
     }
     
 }

@@ -17,20 +17,32 @@ import Foundation
 ///
 /// - Returns: A `Matrix` object with row and column headers.
 func alleleFrequencies( data: Population, locus: String, stratum: String? ) -> Matrix? {
-    var ret = [String:Population]()
+    
     if data.count == 0 {
         return nil
     }
     
     
     if data.strata.count == 0 || stratum == nil {
-        ret["All Data"] = data
-    } else {
-        ret = data.partition(stratum: stratum!)
+        return data.frequencies[locus]?.asMatrix()
+        
     }
     
-    let nrows = ret.count
+    let populations = data.partition(stratum: stratum!)
+    let strataNames = populations.keys.sorted()
+    let ncol = strataNames.count
+    guard let allAlleles = data.frequencies[locus]?.alleles.sorted() else { return nil }
+    let nrow = allAlleles.count
+    var ret = Matrix(rows: nrow, cols: ncol)
+    ret.rowNames = allAlleles
     
-    
-    
+    for c in 0 ..< ncol {
+        if let freqs = populations[ strataNames[c] ]?.frequencies[locus]?.frequency(alleles: allAlleles) {
+            for r in 0 ..< nrow {
+                ret[r,c] = freqs[r]
+            }
+        }
+    }
+
+    return ret
 }
