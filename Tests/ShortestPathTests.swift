@@ -22,16 +22,13 @@ class ShortestPathTest: XCTestCase {
         G.addEdge(from: "B", to: "D", weight: 5.0 )
         G.addEdge(from: "D", to: "E", weight: 8.0 )
         
-        
-        if let path = shortestPathDijkstra(source: G.getNode(label: "A")!,
-                                           destination:  G.getNode(label: "E")!) {
-            print("\(path)")
-            XCTAssertEqual( path.length, 12.0 )
-        }
-        else {
-            print("could not find path")
+        G.nodes.forEach{ node in
+            node.selected = false
         }
         
+        let path = shortestPathDijkstra(source: G.getNode(label: "A")!, destination: G.getNode(label: "E")!)
+        XCTAssertEqual( path?.length, 12.0 )
+        XCTAssertEqual( path?.succession(), ["A","D","E"] )
         
     }
 

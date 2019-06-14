@@ -16,6 +16,9 @@ class PopgraphEdge {
     init(from: PopgraphNode, to: PopgraphNode, weight: Double) {
         self.neighbors = (from,to)
         self.weight = weight
+        
+        from.edges.append(self)
+        to.edges.append(self)
     }
     
     func connects(from: String, to: String ) -> Bool {

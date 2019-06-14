@@ -156,6 +156,7 @@
 		2A8D983F22B421A6005ACF4A /* PopgraphEdgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopgraphEdgeTests.swift; path = Tests/PopgraphEdgeTests.swift; sourceTree = "<group>"; };
 		2A8D984122B421C1005ACF4A /* ShortestPathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShortestPathTests.swift; path = Tests/ShortestPathTests.swift; sourceTree = "<group>"; };
 		2AED98E722B4244300764E16 /* PopgraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopgraphTests.swift; path = Tests/PopgraphTests.swift; sourceTree = "<group>"; };
+		2AED98E922B4304100764E16 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"PopgenKit::PopgenKit::Product" /* PopgenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PopgenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PopgenKit::PopgenKitTests::Product" /* PopgenKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PopgenKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,6 +255,7 @@
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
+				2AED98E922B4304100764E16 /* MyPlayground.playground */,
 				2A27F67C22B029FD00EEF569 /* LICENSE */,
 				2A27F67922B028B900EEF569 /* README.md */,
 				OBJ_6 /* Package.swift */,

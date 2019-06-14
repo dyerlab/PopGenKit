@@ -33,3 +33,18 @@ extension PopgraphNode: Equatable {
                 lhs.edges == rhs.edges
     }
 }
+
+
+
+extension PopgraphNode: CustomStringConvertible {
+    
+    var description: String {
+        var ret = "Node: \(self.label) sz=\(self.size)\n"
+        for edge in self.edges {
+            let other = edge.connectedTo(source: self)
+            ret += " - \(other.label) wt=\(edge.weight)\n"
+        }
+        return ret
+    }
+    
+}

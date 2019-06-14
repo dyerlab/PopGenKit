@@ -15,21 +15,27 @@ func shortestPathDijkstra(source: PopgraphNode, destination: PopgraphNode) -> Po
         didSet { frontier.sort {return $0.length < $1.length } }
     }
     
+    
+    print("from: \(source) to: \(destination)")
     frontier.append(PopgraphPath(to: source))
     
     
+    
+    
     while !frontier.isEmpty {
-        let cheapestPathInFrontier = frontier.removeFirst()
-        guard !cheapestPathInFrontier.destination.selected else { continue }
         
-        if cheapestPathInFrontier.destination == destination {
-            return cheapestPathInFrontier
+        let cheapestPath = frontier.removeFirst()
+        guard !cheapestPath.node.selected else { continue }
+        
+        if cheapestPath.node == destination {
+            return cheapestPath
         }
         
-        cheapestPathInFrontier.destination.selected = true
+        cheapestPath.node.selected = true
         
-        for connection in cheapestPathInFrontier.destination.edges where !connection.connectedTo(source: cheapestPathInFrontier.destination).selected {
-            frontier.append( PopgraphPath(to: connection.connectedTo(source: cheapestPathInFrontier.destination), via: connection, previous: cheapestPathInFrontier))
+        for edge in cheapestPath.node.edges {
+            let neighbor = edge.connectedTo(source: cheapestPath.node )
+            frontier.append( PopgraphPath(to: neighbor, via: edge, previous: cheapestPath) )
         }
     }
     return nil
