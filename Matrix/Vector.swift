@@ -27,14 +27,12 @@ public func sequence( from: Int, to: Int) -> Vector {
         ret[i] = Double(i + from)
     }
     return ret
-    
 }
 
 
 
 
 extension Array where Element == Double {
-    
     
     /// Overload the subtraction operator
     public static func - (left: Vector, right: Vector ) -> Vector {

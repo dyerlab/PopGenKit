@@ -54,6 +54,11 @@
 		2A37361C22B2A3540028726D /* FileIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A37361B22B2A3540028726D /* FileIOTests.swift */; };
 		2A37361E22B2B65E0028726D /* GeneticDiversityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A37361D22B2B65E0028726D /* GeneticDiversityType.swift */; };
 		2A37361F22B2B65E0028726D /* GeneticDiversityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A37361D22B2B65E0028726D /* GeneticDiversityType.swift */; };
+		2A82418E22B3D16A0026F443 /* GeneticDiversity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A82418D22B3D16A0026F443 /* GeneticDiversity.swift */; };
+		2A82419022B3D51F0026F443 /* MatrixAdaptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A82418F22B3D51F0026F443 /* MatrixAdaptable.swift */; };
+		2A82419122B3D62C0026F443 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB094022B2D14800435B8E /* Array.swift */; };
+		2A82419222B3D6300026F443 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB093E22B2CFD500435B8E /* Matrix.swift */; };
+		2A82419322B3D6330026F443 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB093C22B2CF9400435B8E /* Vector.swift */; };
 		2ADB093D22B2CF9400435B8E /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB093C22B2CF9400435B8E /* Vector.swift */; };
 		2ADB093F22B2CFD500435B8E /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB093E22B2CFD500435B8E /* Matrix.swift */; };
 		2ADB094122B2D14800435B8E /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB094022B2D14800435B8E /* Array.swift */; };
@@ -125,6 +130,8 @@
 		2A37361622B293A30028726D /* arapat.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = arapat.csv; path = "/Users/rodney/Library/Mobile Documents/com~apple~CloudDocs/Programming/PopGenKit/arapat.csv"; sourceTree = "<absolute>"; };
 		2A37361B22B2A3540028726D /* FileIOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIOTests.swift; sourceTree = "<group>"; };
 		2A37361D22B2B65E0028726D /* GeneticDiversityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticDiversityType.swift; sourceTree = "<group>"; };
+		2A82418D22B3D16A0026F443 /* GeneticDiversity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticDiversity.swift; sourceTree = "<group>"; };
+		2A82418F22B3D51F0026F443 /* MatrixAdaptable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAdaptable.swift; sourceTree = "<group>"; };
 		2ADB093C22B2CF9400435B8E /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		2ADB093E22B2CFD500435B8E /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		2ADB094022B2D14800435B8E /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -154,15 +161,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_10 /* Tests */ = {
+		2A82419422B3D6B90026F443 /* Genetic */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_11 /* PopgenKitTests */,
+				2A27F66622B028A400EEF569 /* Coordinate.swift */,
+				2A27F66322B028A400EEF569 /* Population.swift */,
+				2A27F66522B028A400EEF569 /* Genotype.swift */,
+				2A27F66822B028A400EEF569 /* Individual.swift */,
+				2A27F66A22B028A400EEF569 /* Locus.swift */,
 			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
+			path = Genetic;
+			sourceTree = "<group>";
 		};
-		OBJ_11 /* PopgenKitTests */ = {
+		2A82419522B3D6C50026F443 /* FileIO */ = {
+			isa = PBXGroup;
+			children = (
+				2A27F66422B028A400EEF569 /* FileIO.swift */,
+				2A37361322B28D620028726D /* InputFileFormat.swift */,
+			);
+			path = FileIO;
+			sourceTree = "<group>";
+		};
+		2A82419622B3D6D10026F443 /* Matrix */ = {
+			isa = PBXGroup;
+			children = (
+				2ADB093C22B2CF9400435B8E /* Vector.swift */,
+				2ADB093E22B2CFD500435B8E /* Matrix.swift */,
+				2ADB094022B2D14800435B8E /* Array.swift */,
+			);
+			path = Matrix;
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				2A27F65522B0285F00EEF569 /* CoordinateTests.swift */,
@@ -175,8 +205,7 @@
 				2A37361B22B2A3540028726D /* FileIOTests.swift */,
 				2ADB094222B2D17F00435B8E /* ArrayTests.swift */,
 			);
-			name = PopgenKitTests;
-			path = Tests/PopgenKitTests;
+			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_14 /* Products */ = {
@@ -203,32 +232,27 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2A27F66722B028A400EEF569 /* PopgenKit.h */,
 				2A37361622B293A30028726D /* arapat.csv */,
 				2A27F67D22B02A7000EEF569 /* Info.plist */,
-				OBJ_8 /* PopgenKit */,
+				2A82419422B3D6B90026F443 /* Genetic */,
+				2A82419522B3D6C50026F443 /* FileIO */,
+				2A82419622B3D6D10026F443 /* Matrix */,
+				OBJ_8 /* Analyses */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_8 /* PopgenKit */ = {
+		OBJ_8 /* Analyses */ = {
 			isa = PBXGroup;
 			children = (
-				2A27F66722B028A400EEF569 /* PopgenKit.h */,
-				2A27F66622B028A400EEF569 /* Coordinate.swift */,
-				2A27F66322B028A400EEF569 /* Population.swift */,
 				2A27F66922B028A400EEF569 /* Frequencies.swift */,
-				2A27F66522B028A400EEF569 /* Genotype.swift */,
-				2A27F66822B028A400EEF569 /* Individual.swift */,
-				2A27F66A22B028A400EEF569 /* Locus.swift */,
-				2A27F66422B028A400EEF569 /* FileIO.swift */,
-				2A37361322B28D620028726D /* InputFileFormat.swift */,
 				2A37361D22B2B65E0028726D /* GeneticDiversityType.swift */,
-				2ADB093C22B2CF9400435B8E /* Vector.swift */,
-				2ADB093E22B2CFD500435B8E /* Matrix.swift */,
-				2ADB094022B2D14800435B8E /* Array.swift */,
+				2A82418D22B3D16A0026F443 /* GeneticDiversity.swift */,
+				2A82418F22B3D51F0026F443 /* MatrixAdaptable.swift */,
 			);
-			name = PopgenKit;
-			path = Sources/PopgenKit;
+			name = Analyses;
+			path = Sources/Analyses;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -321,11 +345,13 @@
 				2A27F67722B028A400EEF569 /* Locus.swift in Sources */,
 				2A27F67522B028A400EEF569 /* Frequencies.swift in Sources */,
 				2A27F67322B028A400EEF569 /* Individual.swift in Sources */,
+				2A82419022B3D51F0026F443 /* MatrixAdaptable.swift in Sources */,
 				2A27F65B22B0285F00EEF569 /* GenotypeTests.swift in Sources */,
 				2ADB093F22B2CFD500435B8E /* Matrix.swift in Sources */,
 				2A37361422B28D620028726D /* InputFileFormat.swift in Sources */,
 				2A27F65F22B0285F00EEF569 /* CoordinateTests.swift in Sources */,
 				2A27F66122B0285F00EEF569 /* IndividualTests.swift in Sources */,
+				2A82418E22B3D16A0026F443 /* GeneticDiversity.swift in Sources */,
 				2A27F65722B0285F00EEF569 /* LocusTests.swift in Sources */,
 				2ADB094122B2D14800435B8E /* Array.swift in Sources */,
 				2A27F67122B028A400EEF569 /* Coordinate.swift in Sources */,
@@ -360,12 +386,15 @@
 				OBJ_41 /* XCTestManifests.swift in Sources */,
 				2A27F67422B028A400EEF569 /* Individual.swift in Sources */,
 				2A37361522B28D620028726D /* InputFileFormat.swift in Sources */,
+				2A82419122B3D62C0026F443 /* Array.swift in Sources */,
+				2A82419322B3D6330026F443 /* Vector.swift in Sources */,
 				2ADB094322B2D17F00435B8E /* ArrayTests.swift in Sources */,
 				2A37361C22B2A3540028726D /* FileIOTests.swift in Sources */,
 				2A27F66222B0285F00EEF569 /* IndividualTests.swift in Sources */,
 				2A27F65A22B0285F00EEF569 /* FrequenciesTests.swift in Sources */,
 				2A27F65822B0285F00EEF569 /* LocusTests.swift in Sources */,
 				2A27F66022B0285F00EEF569 /* CoordinateTests.swift in Sources */,
+				2A82419222B3D6300026F443 /* Matrix.swift in Sources */,
 				2A37361F22B2B65E0028726D /* GeneticDiversityType.swift in Sources */,
 				2A27F66E22B028A400EEF569 /* FileIO.swift in Sources */,
 				2A27F67222B028A400EEF569 /* Coordinate.swift in Sources */,

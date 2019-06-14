@@ -27,6 +27,18 @@ public final class Population {
     var count: Int {
         return individuals.count
     }
+    
+    /// The strata names in the individuals.
+    var strata: [String] {
+        get {
+            if count < 1 {
+                return [String]()
+            }
+            else {
+                return individuals.first?.strata.keys.sorted() ?? [String]()
+            }
+        }
+    }
 
     
     /**
@@ -111,6 +123,23 @@ public final class Population {
 
         return ret
     }
+    
+    
+    /**
+     Grab a vector of genotypes for a particulat locus.
+     
+     - Parameter locusName: The name of the locus.
+     - Returns: A  `Locus` object.
+     */
+    func getLocus( locusName: String ) -> Locus {
+        let ret = Locus()
+        for ind in individuals {
+            ret.append(geno: ind.locus[locusName]! )
+        }
+        return ret
+    }
+    
+    
 }
 
 

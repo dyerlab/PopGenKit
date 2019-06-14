@@ -21,5 +21,6 @@ extension Array {
         let idx = Int( arc4random_uniform(UInt32(self.count)))
         return self[idx]
     }
+    
 }
 

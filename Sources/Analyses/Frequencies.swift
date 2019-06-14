@@ -184,3 +184,21 @@ extension Frequencies: CustomStringConvertible {
         return ret.joined(separator: "\n")
     }
 }
+
+
+
+
+extension Frequencies: MatrixAdaptable {
+    
+    func asMatrix() -> Matrix {
+        let alleles = self.alleles.sorted()
+        let nrow = alleles.count
+        var ret = Matrix(rows: nrow, cols: 1)
+        ret.rowNames = alleles
+        for (i,allele) in alleles.enumerated() {
+            Matrix[i,0] = frequency(allele: allele)
+        }
+        return Matrix
+    }
+    
+}
