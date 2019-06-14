@@ -13,3 +13,9 @@ protocol MatrixAdaptable {
     func asMatrix() -> Matrix
     
 }
+
+
+
+
+
+

@@ -60,6 +60,20 @@
 		2A8241D522B3DB760026F443 /* AlleleFrequencyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A82418D22B3D16A0026F443 /* AlleleFrequencyTable.swift */; };
 		2A8241D622B3DB760026F443 /* MatrixAdaptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A82418F22B3D51F0026F443 /* MatrixAdaptable.swift */; };
 		2A8D982A22B3DCBE005ACF4A /* GeneticDivdersityTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D982922B3DCBE005ACF4A /* GeneticDivdersityTable.swift */; };
+		2A8D982D22B3E934005ACF4A /* PopgraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D982C22B3E934005ACF4A /* PopgraphNode.swift */; };
+		2A8D982F22B3E9A1005ACF4A /* PopgraphEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D982E22B3E9A1005ACF4A /* PopgraphEdge.swift */; };
+		2A8D983122B3EA6E005ACF4A /* Popgraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D983022B3EA6E005ACF4A /* Popgraph.swift */; };
+		2A8D983222B3ED54005ACF4A /* PopgraphEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D982E22B3E9A1005ACF4A /* PopgraphEdge.swift */; };
+		2A8D983322B3ED57005ACF4A /* Popgraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D983022B3EA6E005ACF4A /* Popgraph.swift */; };
+		2A8D983422B3ED57005ACF4A /* PopgraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D982C22B3E934005ACF4A /* PopgraphNode.swift */; };
+		2A8D983622B3EF2E005ACF4A /* ShortestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D983522B3EF2E005ACF4A /* ShortestPath.swift */; };
+		2A8D983722B3EF2E005ACF4A /* ShortestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D983522B3EF2E005ACF4A /* ShortestPath.swift */; };
+		2A8D983922B3F0BC005ACF4A /* PopgraphPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D983822B3F0BC005ACF4A /* PopgraphPath.swift */; };
+		2A8D983A22B3F0BC005ACF4A /* PopgraphPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D983822B3F0BC005ACF4A /* PopgraphPath.swift */; };
+		2A8D983E22B420DA005ACF4A /* PopgraphNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D983D22B420DA005ACF4A /* PopgraphNodeTests.swift */; };
+		2A8D984022B421A6005ACF4A /* PopgraphEdgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D983F22B421A6005ACF4A /* PopgraphEdgeTests.swift */; };
+		2A8D984222B421C1005ACF4A /* ShortestPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D984122B421C1005ACF4A /* ShortestPathTests.swift */; };
+		2AED98E822B4244300764E16 /* PopgraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED98E722B4244300764E16 /* PopgraphTests.swift */; };
 		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_43 /* PopgenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PopgenKit::PopgenKit::Product" /* PopgenKit.framework */; };
 /* End PBXBuildFile section */
@@ -133,6 +147,15 @@
 		2A8241BC22B3D8AC0026F443 /* GenotypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GenotypeTests.swift; path = Tests/GenotypeTests.swift; sourceTree = "<group>"; };
 		2A8241BD22B3D8AC0026F443 /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayTests.swift; path = Tests/ArrayTests.swift; sourceTree = "<group>"; };
 		2A8D982922B3DCBE005ACF4A /* GeneticDivdersityTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticDivdersityTable.swift; sourceTree = "<group>"; };
+		2A8D982C22B3E934005ACF4A /* PopgraphNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopgraphNode.swift; sourceTree = "<group>"; };
+		2A8D982E22B3E9A1005ACF4A /* PopgraphEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopgraphEdge.swift; sourceTree = "<group>"; };
+		2A8D983022B3EA6E005ACF4A /* Popgraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popgraph.swift; sourceTree = "<group>"; };
+		2A8D983522B3EF2E005ACF4A /* ShortestPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPath.swift; sourceTree = "<group>"; };
+		2A8D983822B3F0BC005ACF4A /* PopgraphPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopgraphPath.swift; sourceTree = "<group>"; };
+		2A8D983D22B420DA005ACF4A /* PopgraphNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopgraphNodeTests.swift; path = Tests/PopgraphNodeTests.swift; sourceTree = "<group>"; };
+		2A8D983F22B421A6005ACF4A /* PopgraphEdgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopgraphEdgeTests.swift; path = Tests/PopgraphEdgeTests.swift; sourceTree = "<group>"; };
+		2A8D984122B421C1005ACF4A /* ShortestPathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShortestPathTests.swift; path = Tests/ShortestPathTests.swift; sourceTree = "<group>"; };
+		2AED98E722B4244300764E16 /* PopgraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopgraphTests.swift; path = Tests/PopgraphTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"PopgenKit::PopgenKit::Product" /* PopgenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PopgenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PopgenKit::PopgenKitTests::Product" /* PopgenKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PopgenKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +211,18 @@
 			path = Matrix;
 			sourceTree = "<group>";
 		};
+		2A8D982B22B3E8DF005ACF4A /* Popgraphs */ = {
+			isa = PBXGroup;
+			children = (
+				2A8D983022B3EA6E005ACF4A /* Popgraph.swift */,
+				2A8D982C22B3E934005ACF4A /* PopgraphNode.swift */,
+				2A8D982E22B3E9A1005ACF4A /* PopgraphEdge.swift */,
+				2A8D983822B3F0BC005ACF4A /* PopgraphPath.swift */,
+				2A8D983522B3EF2E005ACF4A /* ShortestPath.swift */,
+			);
+			path = Popgraphs;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +234,10 @@
 				2A8241BB22B3D8AC0026F443 /* IndividualTests.swift */,
 				2A8241BA22B3D8AC0026F443 /* LocusTests.swift */,
 				2A8241B822B3D8AC0026F443 /* PopulationTests.swift */,
+				2A8D983D22B420DA005ACF4A /* PopgraphNodeTests.swift */,
+				2A8D983F22B421A6005ACF4A /* PopgraphEdgeTests.swift */,
+				2AED98E722B4244300764E16 /* PopgraphTests.swift */,
+				2A8D984122B421C1005ACF4A /* ShortestPathTests.swift */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
@@ -230,10 +269,11 @@
 				2A27F66722B028A400EEF569 /* PopgenKit.h */,
 				2A37361622B293A30028726D /* arapat.csv */,
 				2A27F67D22B02A7000EEF569 /* Info.plist */,
-				2A82419422B3D6B90026F443 /* Genetic */,
-				2A82419522B3D6C50026F443 /* FileIO */,
-				2A82419622B3D6D10026F443 /* Matrix */,
 				OBJ_8 /* Analyses */,
+				2A82419422B3D6B90026F443 /* Genetic */,
+				2A8D982B22B3E8DF005ACF4A /* Popgraphs */,
+				2A82419622B3D6D10026F443 /* Matrix */,
+				2A82419522B3D6C50026F443 /* FileIO */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -342,11 +382,16 @@
 				2A82419022B3D51F0026F443 /* MatrixAdaptable.swift in Sources */,
 				2A82419922B3D8520026F443 /* FileIO.swift in Sources */,
 				2A8241A222B3D8680026F443 /* Individual.swift in Sources */,
+				2A8D983122B3EA6E005ACF4A /* Popgraph.swift in Sources */,
+				2A8D982F22B3E9A1005ACF4A /* PopgraphEdge.swift in Sources */,
+				2A8D982D22B3E934005ACF4A /* PopgraphNode.swift in Sources */,
 				2A8241AA22B3D8680026F443 /* Genotype.swift in Sources */,
 				2A82419B22B3D8520026F443 /* InputFileFormat.swift in Sources */,
 				2A8D982A22B3DCBE005ACF4A /* GeneticDivdersityTable.swift in Sources */,
 				2A8241AF22B3D87B0026F443 /* Array.swift in Sources */,
+				2A8D983922B3F0BC005ACF4A /* PopgraphPath.swift in Sources */,
 				2A82418E22B3D16A0026F443 /* AlleleFrequencyTable.swift in Sources */,
+				2A8D983622B3EF2E005ACF4A /* ShortestPath.swift in Sources */,
 				2A8241A622B3D8680026F443 /* Locus.swift in Sources */,
 				2A37361E22B2B65E0028726D /* GeneticDiversityType.swift in Sources */,
 				2A8241B122B3D87B0026F443 /* Vector.swift in Sources */,
@@ -371,25 +416,34 @@
 				2A8241C722B3D8AC0026F443 /* CoordinateTests.swift in Sources */,
 				2A8241AB22B3D8680026F443 /* Genotype.swift in Sources */,
 				2A8241D322B3DB760026F443 /* Frequencies.swift in Sources */,
+				2A8D983422B3ED57005ACF4A /* PopgraphNode.swift in Sources */,
+				2A8D983A22B3F0BC005ACF4A /* PopgraphPath.swift in Sources */,
 				2A8241B222B3D87B0026F443 /* Vector.swift in Sources */,
+				2A8D984222B421C1005ACF4A /* ShortestPathTests.swift in Sources */,
 				2A8241CB22B3D8AC0026F443 /* IndividualTests.swift in Sources */,
+				2A8D983722B3EF2E005ACF4A /* ShortestPath.swift in Sources */,
 				2A8241CF22B3D8AD0026F443 /* ArrayTests.swift in Sources */,
+				2A8D983E22B420DA005ACF4A /* PopgraphNodeTests.swift in Sources */,
 				2A8241C922B3D8AC0026F443 /* LocusTests.swift in Sources */,
 				2A8241A522B3D8680026F443 /* Coordinate.swift in Sources */,
 				2A8241C522B3D8AC0026F443 /* PopulationTests.swift in Sources */,
 				2A8241A722B3D8680026F443 /* Locus.swift in Sources */,
+				2A8D983322B3ED57005ACF4A /* Popgraph.swift in Sources */,
 				2A8241D522B3DB760026F443 /* AlleleFrequencyTable.swift in Sources */,
 				2A8241B022B3D87B0026F443 /* Array.swift in Sources */,
 				2A8241A322B3D8680026F443 /* Individual.swift in Sources */,
 				2A8241B422B3D87B0026F443 /* Matrix.swift in Sources */,
 				2A8241D422B3DB760026F443 /* GeneticDiversityType.swift in Sources */,
+				2A8D983222B3ED54005ACF4A /* PopgraphEdge.swift in Sources */,
 				2A8241A922B3D8680026F443 /* Population.swift in Sources */,
+				2AED98E822B4244300764E16 /* PopgraphTests.swift in Sources */,
 				2A8241CD22B3D8AD0026F443 /* GenotypeTests.swift in Sources */,
 				2A82419C22B3D8520026F443 /* InputFileFormat.swift in Sources */,
 				2A8241D622B3DB760026F443 /* MatrixAdaptable.swift in Sources */,
 				2A82419A22B3D8520026F443 /* FileIO.swift in Sources */,
 				2A8241C322B3D8AC0026F443 /* FrequenciesTests.swift in Sources */,
 				2A8241BF22B3D8AC0026F443 /* FileIOTests.swift in Sources */,
+				2A8D984022B421A6005ACF4A /* PopgraphEdgeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
